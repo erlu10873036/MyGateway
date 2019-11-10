@@ -1,0 +1,16 @@
+spring:
+    cloud:
+      gateway:
+        routes:
+          - predicates:
+              - Path=/achun/**
+            filters:
+              - StripPrefix=1
+            uri:
+              "http://localhost:8090/"
+          - predicates:
+              - Path=/lulu/**
+            filters:
+              - StripPrefix=1
+            uri:
+              "http://localhost:8091/"
