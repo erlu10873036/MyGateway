@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version :
  * 
  */
-
 @SpringBootApplication
 public class RouterApp {
 
